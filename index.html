@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+      }
+      nav {
+        background-color: #000;
+        box-sizing: border-box;
+        width: 100%;
+
+        text-align: center;
+      }
+      nav ul {
+        list-style: none;
+
+        list-style: none;
+        display: inline-block;
+        text-align: right;
+      }
+      nav ul li {
+        color: #fff;
+        padding: 15px;
+        display: inline-block;
+      }
+      nav ul#menu {
+        padding: 15px;
+        width: 70%;
+        text-align: center;
+      }
+
+      nav ul#social {
+        margin-right: 0px;
+      }
+      body {
+        font-family: "Source Code Pro", monospace;
+        font-optical-sizing: auto;
+      }
+      nav ul a {
+        text-decoration: none;
+      }
+      nav ul li:hover {
+        text-decoration: none;
+        color: bisque;
+      }
+      header div#banner {
+        height: 70vh;
+        background-image: url(./assets/images/banner-web-development.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px,
+          rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px,
+          rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      main section#project .projects {
+        height: 300px;
+        width: 300px;
+        margin: 20px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+        box-sizing: border-box;
+      }
+      main section#project {
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+      }
+      footer {
+        margin-top: 200px;
+
+        background-color: #20a6c3;
+        height: 60px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      footer ul {
+        list-style: none;
+        display: flex;
+      }
+      footer ul a {
+        text-decoration: none;
+        color: #fff;
+        margin: 10px;
+        display: inline-block;
+      }
+
+      footer div {
+        margin: 26px;
+        color: #fff;
+        box-sizing: border-box;
+      }
+      footer span {
+        margin: 0px 20px;
+        border-bottom: 1px solid #fff;
+      }
+      footer ul a:hover {
+        color: #d18c38;
+      }
+      footer span {
+        margin: 0px 20px;
+        border-bottom: 1px solid #fff;
+      }
+      footer div a {
+        text-decoration: none;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://kit.fontawesome.com/16c1a14e82.js"
+      crossorigin="anonymous"
+    ></script>
+    <header>
+      <nav>
+        <ul id="menu">
+          <a href="" id="menu-items">
+            <li>Home</li>
+          </a>
+          <a href="./public/about.html" id="menu-items">
+            <li>About</li>
+          </a>
+          <a href="#project" id="menu-items">
+            <li>Projects</li>
+          </a>
+          <a href="#footer-element" id="menu-items">
+            <li>Contact</li>
+          </a>
+        </ul>
+
+        <ul id="social">
+          <a
+            href="https://www.instagram.com/r_rahimov1/"
+            id="socials"
+            target="_blank"
+          >
+            <li><i class="fa-brands fa-instagram fa-fw"></i></li>
+          </a>
+          <a
+            href="https://twitter.com/Rahim0095943271"
+            id="socials"
+            target="_blank"
+          >
+            <li><i class="fa-brands fa-twitter fa-fw"></i></li>
+          </a>
+          <a href="https://github.com/rrahimov01" id="socials" target="_blank">
+            <li><i class="fa-brands fa-github fa-fw"></i></li>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rahim-rahimov-91b525257/"
+            id="socials"
+            target="_blank"
+          >
+            <li><i class="fa-brands fa-linkedin"></i></li>
+          </a>
+        </ul>
+      </nav>
+      <div id="banner"></div>
+    </header>
+    <main>
+      <h1>My projects</h1>
+      <section id="project">
+        <div>
+          <h2>Movie Ranking system</h2>
+          <div class="projects">
+            <a href="./public/movie-ranking.html" target="_blank"
+              ><img src="./assets/images/movie.png" height="300" alt=""
+            /></a>
+          </div>
+        </div>
+        <div>
+          <h2>Birthday Party Event</h2>
+          <div class="projects">
+            <a href="./public/birthday-invite.html" target="_blank"
+              ><img src="./assets/images/birthday.png" height="300" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <span>&copy; 2024 Rahim Rahimov</span>
+        <a href="mailto:rahimov01.rahim@gmail.com"
+          ><span> E-mail: rahimov01.rahim@gmail.com</span></a
+        >
+      </div>
+      <ul id="footer-element">
+        <a href="./public/about.html" class="footer-links">
+          <li class="footer-elements">about</li>
+        </a>
+        <a href="" class="footer-links">
+          <li class="footer-elements">book</li>
+        </a>
+        <a href="" class="footer-links">
+          <li class="footer-elements">featured</li>
+        </a>
+        <a href="" class="footer-links">
+          <li class="footer-elements">blog</li>
+        </a>
+        <a href="./public/contact.html" class="footer-links">
+          <li class="footer-elements">contact</li>
+        </a>
+      </ul>
+    </footer>
+  </body>
+</html>
